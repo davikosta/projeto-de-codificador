@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="cabecalho__texto">D3C0D1F1C4T0R</h1>
+    </header>
+    <main class="main">
+        <div class="main__apresentacao">
+            <h2 class="main__apresentacao__titulo">
+                Como funciona?
+            </h2>
+            <p class="main__apresentacao__texto">
+                Insira uma palavra ou frase no campo abaixo. Em seguida escolha se irá codificar ou decodificar pelo botões.
+            </p>
+            <p class="main__apresentacao__texto">
+                Atenção: Use somente letras minúsculas e não use acentos ou caracteres especiais.
+            </p>
+        </div>
+        <div class="main__conteudo">
+            <div class="area__codificador">
+                <textarea style="resize: none" id="entrada-de-texto" class="area__codificador__input" cols="30" rows="10" placeholder="Insira aqui o texto a ser codificado/decodificado!"></textarea>
+                <div class="area__codificador__botoes">
+                <button onclick="codificar()" class="botao">Codificar</button>
+                <button onclick="decodificar()" class="botao">Decodificar</button>
+                </div>
+            </div>
+            <div class="area__resultado">
+                    <textarea style="resize: none" id="saida-de-texto" class="area__resultado__texto" cols="30" rows="10" placeholder="O texto codificado/decodificado irá aparecer aqui" readonly></textarea>
+                <button onclick="copiar()" class="botao" id="botao-copiar">Copiar!</button>
+            </div>
+        </div>
+    </main>
+    <footer class="rodape">
+        <p class="rodape__texto">Desenvolvido por Davi Costa©</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
