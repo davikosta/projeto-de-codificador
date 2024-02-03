@@ -7,25 +7,41 @@ var saidaDeTexto = document.querySelector("#saida-de-texto");
 function codificar() {
     let entrada = entradaDeTexto.value;
     
-    let resultado = entrada.replace(/e/, "enter").replace(/i/, "imes").replace(/a/g, "ai").replace(/o/, "ober").replace(/u/, "ufat");
+    let resultado = entrada.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat");
 
     document.getElementById("saida-de-texto").innerHTML = resultado;
 
     textoCopiado = false;
 
     exibirTextoCopiado()
+
+    apagarEntrada()
 }
 
 function decodificar() {
     let entrada = entradaDeTexto.value;
 
-    let resultado = entrada.replace(/enter/, "e").replace(/imes/, "i").replace(/ai/, "a").replace(/ober/, "o").replace(/ufat/, "u");
+    let resultado = entrada.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
 
     document.getElementById("saida-de-texto").innerHTML = resultado;
 
     textoCopiado = false;
 
     exibirTextoCopiado();
+
+    apagarEntrada()
+}
+
+function reverterdecodificar() {
+    let entrada = saidaDeTexto.value;
+
+    let resultado = entrada.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
+
+    document.getElementById("saida-de-texto").innerHTML = resultado;
+
+    textoCopiado = false;
+
+    exibirTextoCopiado();   
 }
 
 function copiar() {
@@ -38,9 +54,10 @@ function copiar() {
     textoCopiado = true;
 
     exibirTextoCopiado();
+}
 
-    document.getElementById("entrada-de-texto").value = ""; //apaga a entrada
-
+function apagarEntrada() {
+    document.getElementById("entrada-de-texto").value = "";
 }
 //função que define qual mensagem o botão de copiar irá exibir
 function exibirTextoCopiado() {
