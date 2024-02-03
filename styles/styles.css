@@ -11,6 +11,7 @@
   --fonte-título: "Honk", system-ui;
   --fonte-body: "Bebas Neue", sans-serif;
   --fonte-textarea: "Montserrat", sans-serif;
+  --cor-texto-body: whitesmoke;
   --cor-primaria: #2D3250;
   --cor-secundaria: #424769;
   --cor-secundaria-hover: #343854;
@@ -24,7 +25,7 @@ body {
   height: 100vh;
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.5rem;
-  color: whitesmoke;
+  color: var(--cor-texto-body);
   text-shadow: 2px 2px black;
   background-color: var(--cor-primaria);
   background-image: url(../assets/imagem-de-fundo.gif);}
@@ -134,13 +135,17 @@ textarea {
   text-align: center;
   cursor: pointer;
   position:relative;
-  transition: 1s;
+  transition: 0.1s;
 }
 
 .botao:active {
-  background-color: wheat;
-  bottom:-2px;
-  box-shadow: var(--cor-primaria) 8px 12px;
+  top: 2px;
+  box-shadow: var(--cor-primaria) 8px 6px;
+}
+
+.botao:disabled:active,.botao:disabled {
+  box-shadow: none;
+  top: 0;
 }
 
 .area__resultado {

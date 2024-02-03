@@ -19,7 +19,7 @@
                 Insira uma palavra ou frase no campo abaixo. Em seguida escolha se irá codificar ou decodificar pelo botões.
             </p>
             <p class="main__apresentacao__texto">
-                Atenção: Use somente letras minúsculas e não use acentos ou caracteres especiais.
+                <span style="color: red;">Atenção: </span>Para o funcionamento correto do codificador <span style="color: red;">não</span> use letras maiúsculas, acentos ou caracteres especiais.
             </p>
         </div>
         <div class="main__conteudo">
@@ -34,7 +34,7 @@
                 <textarea style="resize: none" id="saida-de-texto" class="area__resultado__texto" cols="30" rows="10" placeholder="O texto codificado/decodificado irá aparecer aqui" readonly></textarea>
                 <div class="area__resultado__botoes">
                 <button onclick="copiar()" class="botao" id="botao-copiar">Copiar!</button>
-                <button onclick="reverterdecodificar()" class="botao" id="botao-copiar">Reverter!</button>
+                <button onclick="reverter()" class="botao" id="botao-reverter">Reverter!</button>
                 </div>
             </div>
         </div>
