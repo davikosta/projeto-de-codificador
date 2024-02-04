@@ -210,6 +210,7 @@ textarea {
 @media (max-width: 1190px) {
   body {
     width: auto;
+    height: 100%;
   }
 
   .cabecalho__texto {
@@ -240,7 +241,13 @@ textarea {
   }
 
   .rodape {
-    position: fixed;
-    bottom:0;
+    position: absolute;
+  }
+
+}
+
+@media (max-width: 1156px) {
+  .main {
+    margin-bottom: 20vh;
   }
 }
