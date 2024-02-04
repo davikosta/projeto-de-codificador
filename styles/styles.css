@@ -220,7 +220,7 @@ textarea {
   .main {
     width: auto;
     margin: 8vh;
-    margin-bottom: 100vh;
+    margin-bottom: 20vh;
   }
 
   .main__apresentacao {
@@ -246,4 +246,13 @@ textarea {
     position: absolute;
   }
 
+}
+
+@media(max-width: 390px) {
+  .botao {
+    font-size: 1rem;
+  }
+  .main {
+    margin-bottom: 25vh;
+  }
 }
