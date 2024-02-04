@@ -238,4 +238,8 @@ textarea {
   .area__resultado {
     width: 80%;
   }
+
+  .rodape {
+    position: fixed
+  }
 }
