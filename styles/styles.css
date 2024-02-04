@@ -221,7 +221,7 @@ textarea {
   }
 
   .main__apresentacao {
-    width: 80%;
+    width: 80vw;
     margin: 0;
   }
 
@@ -240,6 +240,7 @@ textarea {
   }
 
   .rodape {
-    position: fixed
+    position: fixed;
+    bottom:0;
   }
 }
