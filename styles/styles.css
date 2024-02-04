@@ -218,7 +218,9 @@ textarea {
   }
 
   .main {
+    width: auto;
     margin: 8vh;
+    margin-bottom: 100vh;
   }
 
   .main__apresentacao {
@@ -244,10 +246,4 @@ textarea {
     position: absolute;
   }
 
-}
-
-@media (max-width: 1156px) {
-  .main {
-    margin-bottom: 20vh;
-  }
 }
