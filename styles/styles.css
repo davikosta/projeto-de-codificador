@@ -257,8 +257,8 @@ textarea {
   }
 }
 
-@media(max-height: 600px) {
+@media(max-height: 610px) {
   .main {
-    margin-bottom: 70vh;
+    margin-bottom: 90vh;
   }
 }
