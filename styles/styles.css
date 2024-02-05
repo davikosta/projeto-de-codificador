@@ -64,8 +64,7 @@ textarea {
 }
 
 .main__apresentacao {
-  /* background-color: var(--cor-secundaria); */
-  background-color: lightpink;
+  background-color: var(--cor-secundaria);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -261,5 +260,11 @@ textarea {
 @media(max-height: 610px) {
   .main {
     margin-bottom: 90vh;
+  }
+}
+
+@media(max-height: 530px) {
+  .main {
+    margin-bottom: 110vh;
   }
 }
