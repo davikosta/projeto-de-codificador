@@ -64,7 +64,8 @@ textarea {
 }
 
 .main__apresentacao {
-  background-color: var(--cor-secundaria);
+  /* background-color: var(--cor-secundaria); */
+  background-color: lightpink;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
