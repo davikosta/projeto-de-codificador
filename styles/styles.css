@@ -21,6 +21,7 @@
 }
 
 body { 
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   min-width:100vw;
@@ -212,7 +213,6 @@ textarea {
 
 @media(max-width: 900px) {
   body {
-    /* height: 200vh; */
     width: 100%;
     gap: 2vh;
   }
@@ -239,6 +239,10 @@ textarea {
     width: 80%;
     height: 30vh;
     margin: 1vh;
+  }
+
+  .area__codificador__input, .area__resultado__texto {
+    font-size: 1rem;
   }
 
 }
