@@ -235,6 +235,7 @@ textarea::placeholder {
 }
 
 @media(max-width: 900px) {
+
   .cabecalho__texto{
     font-size: 2rem;
   }
@@ -242,8 +243,8 @@ textarea::placeholder {
     font-size: 1rem;
   }
   .main {
-    margin: 0;
-    gap: 2vh;
+    margin: 2rem;
+    gap: 2rem;
   }
 
   .main__conteudo {
