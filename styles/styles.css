@@ -246,7 +246,7 @@ textarea::placeholder {
     font-size: 1rem;
   }
   .main {
-    /* margin: 2rem; */
+    min-height: 0;
     gap: 2rem;
   }
 
