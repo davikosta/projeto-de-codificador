@@ -1,0 +1,21 @@
+@import "./variables.css";
+
+.cabecalho {
+    width: var(--width, 100%);
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-secundaria);
+    border: ridge 6px var(--cor-primaria);
+}
+
+.cabecalho__texto {
+    padding: 1%;
+    font-family: "Honk", system-ui;
+    font-size: 6rem;
+}
+
+@media(max-width: 900px) {
+    .cabecalho__texto {
+        font-size: 2rem;
+    }
+}

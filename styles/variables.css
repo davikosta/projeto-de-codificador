@@ -1,0 +1,22 @@
+:root {
+    /* cores */
+    --cor-texto-body: whitesmoke;
+    --cor-primaria: #2D3250;
+    --cor-secundaria: #424769;
+    --cor-secundaria-hover: #343854;
+    --cor-terciaria: #7077A1;
+    --cor-quadrenaria: #F6B17A;
+    --cor-quadrenaria-hover: #F7C094;
+    /* fontes */
+    --fonte-título: "Honk", system-ui;
+    --fonte-body: "Bebas Neue", sans-serif;
+    --fonte-textarea: "Montserrat", sans-serif;
+    --fs-base: 16px;
+    --fs-default: calc(var(var(--fs-base)) * 1.5);
+    /* sizes */
+    --height: 100dvh;
+    --width: 100dvw;
+    /* images path */
+    --body-image-path: ./assets/imagem-de-fundo.gif;
+
+}

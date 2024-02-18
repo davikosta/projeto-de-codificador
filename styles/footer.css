@@ -1,0 +1,17 @@
+@import "./variables.css";
+
+.rodape {
+    width: 100%;
+    background-color: var(--cor-secundaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: ridge 6px var(--cor-primaria);
+
+}
+
+@media(max-width: 900px) {
+    .rodape {
+        margin-top: 2rem;
+    }
+}
