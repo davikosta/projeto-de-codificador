@@ -8,42 +8,64 @@
 }
 
 :root {
-  --fonte-título: "Honk", system-ui;
-  --fonte-body: "Bebas Neue", sans-serif;
-  --fonte-textarea: "Montserrat", sans-serif;
+  /* cores */
   --cor-texto-body: whitesmoke;
   --cor-primaria: #2D3250;
-  --cor-secundaria: #424769;
+  --cor-secundaria: #424769;  
   --cor-secundaria-hover: #343854;
   --cor-terciaria: #7077A1;
   --cor-quadrenaria: #F6B17A;
   --cor-quadrenaria-hover: #F7C094;
+  /* fontes */
+  --fonte-título: "Honk", system-ui;
+  --fonte-body: "Bebas Neue", sans-serif;
+  --fonte-textarea: "Montserrat", sans-serif;
+  --fs-base: 16px;
+  --fs-default: calc(var(var(--fs-base)) * 1.5);
+  /* sizes */
+  --height: 100dvh;
+  --width: 100dvw;
+  /* images path */
+  --body-image-path: ./assets/imagem-de-fundo.gif;
+
+}
+
+html {
+  box-sizing: content-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body { 
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  min-width:100vw;
-  min-height: 100vh;
+  min-width:var(--width, 100vw);
+  min-height: var(--height, 100vh);
   font-family: "Bebas Neue", sans-serif;
-  font-size: 1.5rem;
+  font-size: var(--fs-default);
   color: var(--cor-texto-body);
   text-shadow: 2px 2px black;
   background-color: var(--cor-primaria);
-  background-image: url(../assets/imagem-de-fundo.gif);}
+  background-image: url(../assets/imagem-de-fundo.gif);
+}
+
+textarea {
+  --_fs-textarea: calc(var(var(--fs-default) / 1.5));
+  font-family: "Bebas Neue", sans-serif;
+  font-size: var(--_fs-textarea);
+}
 
 textarea::placeholder {
   color: black;
 }
 
-textarea {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 1rem;
-}
-
 .cabecalho {
-  width: 100%;
+  width: var(--width, 100%);
   display: flex;
   justify-content: center;
   background-color: var(--cor-secundaria);
@@ -61,10 +83,11 @@ textarea {
   
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: var(--height, 100vh);
   align-items: center;
   justify-content: center;
   gap: 5%;
+  margin: 1% calc(var(--height, 100vh) / 10);
 }
 
 .main__apresentacao {
@@ -73,17 +96,18 @@ textarea {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin: 4%;
-  margin-bottom: 0;
+  margin: 4% 4% 0;
   border-radius: 30px;
   padding: 20px;
   box-shadow: var(--cor-secundaria-hover) 10px 10px;
-  width: 70vw;
+  width: calc(var(--width, 100vw) - 30vw);
 }
 
 .main__conteudo {
-  min-height: 40%;
-  width: 100%;
+  --_height: calc(var(var(--height), 100vh) - 60vh)
+  
+  min-height: var(var(--_height), 40%);
+  width: var(--width);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
