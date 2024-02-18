@@ -225,7 +225,6 @@ textarea::placeholder {
 }
 
 .rodape {
-
   width: 100%;
   background-color: var(--cor-secundaria);
   display: flex;
@@ -236,11 +235,6 @@ textarea::placeholder {
 }
 
 @media(max-width: 900px) {
-  body {
-    width: 100%;
-    gap: 2vh;
-  }
-
   .cabecalho__texto{
     font-size: 2rem;
   }
@@ -249,7 +243,6 @@ textarea::placeholder {
   }
   .main {
     margin: 0;
-    height: 100%;
     gap: 2vh;
   }
 
