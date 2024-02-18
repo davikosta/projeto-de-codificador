@@ -235,6 +235,9 @@ textarea::placeholder {
 }
 
 @media(max-width: 900px) {
+  body {
+    justify-content: space-between;
+  }
 
   .cabecalho__texto{
     font-size: 2rem;
@@ -243,7 +246,7 @@ textarea::placeholder {
     font-size: 1rem;
   }
   .main {
-    margin: 2rem;
+    /* margin: 2rem; */
     gap: 2rem;
   }
 
@@ -261,6 +264,10 @@ textarea::placeholder {
 
   .area__codificador__input, .area__resultado__texto {
     font-size: 1rem;
+  }
+
+  .rodape {
+    margin-top: 2rem;
   }
 
 }
