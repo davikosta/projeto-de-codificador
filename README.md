@@ -12,6 +12,6 @@ Projeto realizado durante programa ONE (Oracle Next Education) com o objetivo de
 ## Responsividade:
 | Responsividade no desktop (1920x1080) | Responsividade no mobile (2340x1080) |
 |----------|----------|
-| ![Desktop](/assets/imagem-readme-responsivo-desktop.png) | ![Mobile](/assets/imagem-redme-responsivo-mobile.jpg) |
+| ![Desktop](./src/assets/imagem-readme-responsivo-desktop.png) | ![Mobile](./src/assets/imagem-redme-responsivo-mobile.jpg) |
 
 
